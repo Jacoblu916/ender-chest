@@ -1,0 +1,1 @@
+I am a ten-year-old boy from China named Jacob. My goal is to become a game programmer and develop independent games like Minecraft. To achieve this goal, I am teaching myself C++ and came here hoping to learn more and receive everyone's help and suggestions. Thank you.
