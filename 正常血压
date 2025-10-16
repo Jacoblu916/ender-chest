@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>> n;
+    int ms = 0;
+    int s = 0;
+    for( int i = 0; i < n; i++){
+        int a , b;
+        cin>> a >> b;
+        if( a >= 90&& a <= 140&& b >= 60&& b <= 90){
+            s++;
+            if( s > ms){
+            ms = s;
+            }
+        } else {
+            s = 0;
+        }
+    }
+    cout<< ms <<endl;
+    return 0;
+}
