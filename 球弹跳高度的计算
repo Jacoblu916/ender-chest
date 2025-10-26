@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int h;
+    cin>> h;
+    double hh = h;
+    double td = h;
+    for(int i = 0; i < 10; i++){
+        hh /= 2;
+        if (i < 9) {
+            td += hh * 2;
+        }
+    }
+    cout<< td <<endl;
+    cout<< hh;
+    return 0;
+}
