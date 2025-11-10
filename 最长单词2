@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
+#include <cctype>
+using namespace std;
+int main(){
+    string s;
+    getline(cin, s);
+    vector<string>ws;
+    string wo;
+    for(int i = 0; i < s.size(); i++){
+        if(isalpha(s[i])){
+            wo += s[i];
+        }else if(!wo.empty()){
+            ws.push_back(wo);
+            wo.clear();
+        }
+    }
+    if(!wo.empty()){
+        ws.push_back(wo);
+    }
+    string ms = "";
+    ms = ws[0];
+    for(const string &w : ws){
+        if(w.length() > ms.length()){
+            ms = w;
+        }
+    }
+    cout<< ms;
+    return 0;
+}
+
